@@ -45,11 +45,9 @@ function createBoard() {
 }
 function checkForMatch() {
     if (cardsInPlay[0] === cardsInPlay[1]) {
-        // score.textContent=scores;
         result.textContent = "You found a match!";
     }
     else {
-        // alert("Sorry, try again.");
         scores -= 50;
         score.textContent = scores;
         result.textContent = "Sorry, try again.";
@@ -80,6 +78,7 @@ function flipCard() {
 }
 
 function resetGame() {
+    scores = 0;
     score.textContent = 0;
     result.textContent = " ";
     if (cardsInPlay.length === 0) {

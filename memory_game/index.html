@@ -2,10 +2,10 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<title>Memory Card Game</title>
-	<link href="https://fonts.googleapis.com/css?family=Droid+Serif|Raleway:400,500,600,700" rel="stylesheet">
-	<link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <title>Memory Card Game</title>
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif|Raleway:400,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 
@@ -14,35 +14,62 @@
         <h1>Memory Game</h1>
     </header>
     <nav>
-        <a href="#">Instructions</a>
-        <a href="#">Game</a>
+        <a href="#instraction">Instructions</a>
+        <a href="#game-board">Game</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contacts</a>
     </nav>
     <main>
-        <h2>Instructions</h2>
-        <p>Concentration, also known as Match Match, Memory, Pelmanism, Shinkei-suijaku,
-            Pexeso or simply Pairs, is a card game in which all of the cards are laid face
-            down on a surface and two cards are flipped face up over each turn. The object
-            of the game is to turn over pairs of matching cards.</p>
+        <div id="instructions">
+            <h2>Instructions</h2>
+            <p>Concentration, also known as Match Match, Memory, Pelmanism, Shinkei-suijaku,
+                Pexeso or simply Pairs, is a card game in which all of the cards are laid face
+                down on a surface and two cards are flipped face up over each turn. The object
+                of the game is to turn over pairs of matching cards.</p>
 
-        <div>
-            <img src="images/back.png" alt="Queen of Diamonds">
-            <img src="images/back.png" alt="Queen of Hearts">
-            <img src="images/back.png" alt="King of Diamonds">
-            <img src="images/back.png" alt="King of Hearts">
         </div>
 
-        <h2>About</h2>
-        <p></p>
-        <h2>Contacts</h2>
-        <p>
-        </p>
+        <div id="game-board" class="board clearfix">
+        </div>
+
+        <div id="game-score">
+            <p>Your scores are: <span class="score">0</span> </p>
+            <p>Your result is: <span class="result"></span></p>
+        </div>
+        <button name="reset" type="reset" class="reset">Reset</button>
+
+        <div id="about" class="about">
+            <h2>About</h2>
+            <p>I’m a fresh graduate student of IT. I’m software developer who loves building interesting products.</p>
+        </div>
+
+        <section id="contact">
+            <div class="container">
+                <h2>Contacts</h2>
+
+                <form name="htmlform" method="post" action="toyousender.php">
+
+                    <input type="text" name="first_name" placeholder="NAME" required>
+
+                    <input type="email" name="email" placeholder="MAIL" required>
+
+                    <textarea name="comments" placeholder="MESSAGE" required></textarea>
+
+                    <button name="send" type="submit" class="submit">SEND</button>
+
+                </form>
+            </div>
+        </section>
+
     </main>
+
     <footer class="clearfix">
-        <p class="copyright"> Copyright 2017  </p>
+        <p class="copyright"> Copyright 2020 </p>
         <p class="message">Created with &hearts; by <span class="name">Asrar</span></p>
     </footer>
 
     <script src="js/main.js"></script>
 
 </body>
+
 </html>
